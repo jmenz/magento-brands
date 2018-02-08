@@ -1,0 +1,17 @@
+<?php
+/** @var \Jmenz\Brand\Block\Product\Brand\Listing $block */
+/** @var \Jmenz\Brand\Api\Data\BrandInterface $brand */
+?>
+<div class="brands-container">
+    <h3><?= __('Brands:') ?></h3>
+    <div class="brands-list">
+        <?php foreach ($block->getList()->getItems() as $brand): ?>
+            <div class="brand-item">
+                <img width="150" height="150" src="<?= $block->getLogoUrl($brand->getLogo())?>">
+                <p><?= $brand->getName(); ?></p>
+                <p><?= $brand->getCountry(); ?></p>
+                <p><?= $brand->getFoundationYear(); ?></p>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Jmenz_Brand::brands" title="Brands" translate="title" module="Jmenz_Brand" sortOrder="50" parent="Magento_Catalog::inventory" action="jbrand/brand/index" resource="Jmenz_Brand::brand"/>
+    </menu>
+</config>
